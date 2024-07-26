@@ -72,7 +72,7 @@
 }
 
 .top-leftbar {
-    width: 250px;
+    width: 270px;
     border: 1px solid  rgba(128, 128, 128, 0.527);
     border-radius: 20px;
     padding: 5px;
@@ -132,11 +132,16 @@
 }
 
 .bottom-leftbar {
-    width: 250px;
+    width: 270px;
     border: 1px solid  rgba(128, 128, 128, 0.527);
     border-radius: 20px;
-    padding: 5px;
+    padding:5px;
     margin-top: 30px;
+}
+
+.bottom-leftbar .bg-color
+{
+    padding: 20px 5px;
 }
 
 .recruiter-text
@@ -173,7 +178,7 @@
 {
     margin-top: 30px;
     padding: 15px 20px;
-    width: 250px;
+    width: 270px;
     background-color: #f26f1f;
     color: white;
     border: #f26f1f;
@@ -471,6 +476,90 @@
 
 /* Respomsive */
 
+@media only screen and (max-width: 768px) 
+{
+    .nav
+    {
+        flex-direction: column;
+        margin:10px ;
+    }
+
+    .navbar ul
+    {
+        flex-direction: column;
+    }
+
+    .section-content
+    {
+        flex-direction: column;
+    }
+
+    .leftbar, .rightbar
+    {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    /* .leftbar .top-leftbar, .leftbar .bottom-leftbar, .leftbar .leftbar-button button
+    {
+        width: 350px;
+    } */
+
+    .rightbar .top-rightbar
+    {
+        width: 300px;
+        margin-top: 30px;
+        flex-direction: column; 
+    }
+
+    .rightbar .middle-rightbar h3
+    {
+        padding: 5px;
+    }
+
+    .rightbar .middle-rightbar
+    {
+        width: 300px;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .rightbar .rightbar-paragraph1, .rightbar .rightbar-paragraph2
+    {
+        width: 300px;
+    }
+
+    .rightbar .rightbar-paragraph2 .subject h4
+    {
+       padding: 15px;
+    }
+   
+    .job-related
+    {
+        flex-direction: column;
+    }
+
+    .job-info
+    {
+        margin: 10px 30px;
+    }
+
+    .related-job .related-title
+    {
+        text-align: center;
+    }
+
+    .footer
+    {
+        flex-direction: column;
+    }
+
+    
+}
+
+
 @media only screen and (max-width: 600px) 
 {
     
@@ -495,6 +584,7 @@
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
+        gap: 30px;
     }
 
     .rightbar .top-rightbar

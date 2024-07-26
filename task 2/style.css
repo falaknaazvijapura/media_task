@@ -1,0 +1,296 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+/* #ecebfd
+#a18f70 */
+
+/* font family start */
+
+@font-face {
+    font-family:"Roboto-Medium" ;
+    src: url("./assets/fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family:"Roboto-Bold" ;
+    src: url("./assets/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family:"Roboto-Regular" ;
+    src: url("./assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+/* font family end */
+
+h4
+{
+    color: #a18f70;
+    padding: 10px 0 10px;
+    font-family: "Roboto-Bold", sans-serif;
+}
+
+ul li
+{
+    list-style: none;
+    line-height: 2;
+    font-family: "Roboto-Regular", sans-serif;
+}
+
+
+.container
+{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.bgcolor
+{
+    background-color: #ecebfd;
+}
+
+.top-main
+{
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+.top-main .img img
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.top-main .content h4
+{
+    padding: 0px 0 20px;
+}
+
+.top-main .content h1
+{
+    font-size: 80px;
+    line-height: 0.9;
+}
+
+.top-main .content button
+{
+    padding: 15px 30px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+    background-color: #0699a6;
+    border: 1px solid #0699a6;
+}
+
+.about-company
+{
+    display: flex;
+    gap: 90px;
+    padding: 50px 0 0;
+}
+
+/* leftbar start */
+
+.leftbar
+{
+    width: 35%;
+}
+
+.leftbar ul 
+{
+    padding: 0 0 30px 0;
+}
+
+.career p
+{
+    font-family: "Roboto-Regular", sans-serif;
+    padding: 0 0 25px;
+    line-height: 1.7;
+}
+
+.career .bold
+{
+    font-family: "Roboto-Bold";
+}
+
+ul li a
+{
+    color: #0699a6;
+    text-decoration: none;
+    font-family: "Roboto-Bold";
+}
+
+.leftbar .awards, .leftbar .career, .leftbar .rec-work
+{
+    padding: 50px 0 0;
+}
+
+/* leftbar end */
+
+
+/* rightbar start */
+
+.rightbar
+{
+    width: 60%;
+    padding: 10px 0px 0px;
+}
+
+.rightbar h2
+{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.rightbar p
+{
+    padding: 15px 0 20px;
+    line-height: 1.6;
+    font-family: "Roboto-reguar", sans-serif;
+}
+
+.rightbar .after
+{
+    width: 70px;
+    height: 10px;
+    background-color: #0699a6;
+    margin: 35px 0;
+    
+}
+
+.rightbar .res-after
+{
+    width: 70px;
+    height: 10px;
+    background-color: #0699a6;
+    margin: 35px 0;
+    display: none;
+}
+
+.rightbar .experience .flex, .rightbar .education .flex
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightbar .experience h4, .rightbar .education h4
+{
+    padding: 15px 0 0;
+}
+
+.rightbar .experience h5, .rightbar .education h5
+{
+    padding: 15px 0 0;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.rightbar .experience .space
+{
+    padding: 15px 0 50px;
+}
+
+/* leftbar end */
+
+.footer
+{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer h1
+{
+    padding: 30px 0 20px;
+    font-size: 60px;
+}
+
+.footer h3
+{
+    color: #0699a6;
+    font-size: 30px;
+    padding: 0 0 20px;
+}
+
+.footer .fa-instagram
+{
+    color: #0699a6;
+    font-size: 23px;
+    padding: 15px 20px;
+}
+
+.footer .fa-facebook
+{
+    background-color: #0699a6;
+    color: white;
+    padding: 3px 3px 0px 7px;
+}
+
+.footer .fa-linkedin
+{
+    background-color: #0699a6;
+    color: white;
+    padding: 1px 3px;
+}
+
+.footer .fa-twitter
+{
+    color: #0699a6;
+    font-size: 23px;
+    padding: 15px 20px;
+}
+
+
+@media only screen and (max-width: 768px) 
+{
+    .top-main
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-main .content
+    {
+        text-align: center;
+    }
+
+    .about-company
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .leftbar
+    {
+        width: 60%;
+    }
+
+    .rightbar .flex
+    {
+        flex-direction: column;
+    }
+
+    .rightbar .res-after
+    {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .rightbar
+    {
+        padding: 0;
+    }
+
+    .leftbar .skills .h4
+    {
+        padding: 0;
+        margin: 0;
+    }
+}
+
